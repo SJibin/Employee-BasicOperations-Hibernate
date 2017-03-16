@@ -15,7 +15,7 @@ public class Employee {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="eId")
-private int eId;
+	private int eId;
 	@Column(name="eName")
 	private String eName;
 	@Column(name="salary")
@@ -56,10 +56,10 @@ private int eId;
 	public void setHireDate(Date hireDate) {
 		this.hireDate = hireDate;
 	}
-	@Override
+/*	@Override
 	public String toString() {
 		return "Employee [eId=" + eId + ", eName=" + eName + ", salary=" + salary + ", hireDate=" + hireDate + "]";
 	}
-	
+	*/
 	
 }

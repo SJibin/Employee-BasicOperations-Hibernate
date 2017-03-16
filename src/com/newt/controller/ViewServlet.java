@@ -22,6 +22,7 @@ public class ViewServlet extends HttpServlet {
 		String id = request.getParameter("ssId");
 		int sId = Integer.parseInt(id);
 		Employee employee = dao.getEmployee(sId);
+		System.out.println("Emoployee Object "+employee);
 		request.setAttribute("emp", employee);
 		RequestDispatcher rsd = request.getRequestDispatcher("View.jsp");		
 		rsd.forward(request, response);
